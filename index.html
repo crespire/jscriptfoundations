@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Foundations</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script type="text/Javascript">
+    function add7(x) {
+      return x + 7;
+    }
+
+    function multiply(x, y) {
+      return x * y;
+    }
+
+    function capitalize(str) {
+      let lower = str.toLowerCase();
+      let result = lower.replace(lower.charAt(0), lower.charAt(0).toUpperCase());
+      return result;
+    }
+
+    function lastLetter(str) {
+      return str.charAt(( +str.length - 1 ));
+    }
+
+    let input = prompt("Enter a string to process: ");
+    console.log(capitalize(input));
+    console.log(lastLetter(input));
+  </script>
+</body>
+</html>
